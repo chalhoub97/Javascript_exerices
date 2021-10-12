@@ -1,0 +1,38 @@
+<html>
+ <head>
+	<meta charset="utf-8"/>
+    <title> Javascript et CSS 2</title>
+	<style>
+			#id1{   
+				position: absolute;   
+				background-color: cyan;   
+				text-align: center;   
+				left: 200px;   
+				top: 100px;   
+				width: 80px;   
+				height: 40px;
+		}
+	</style>
+	
+	<script>
+		var x = 200;
+		var y = 100;
+		function move(dx, dy){  
+			var block = document.getElementById("id1");  			
+			x = x + dx;   
+			y = y + dy;   
+			block.style.left = x + "px";   
+			block.style.top = y + "px";
+		}
+	</script>
+ </head>
+ <body>
+    <div id="id1">BLOCK</div>
+    <button onClick="move(-10,0);">Left</button>
+    <button onClick="move(10,0);">Right</button>
+    <button onClick="move(0,-10);">Up</button>
+    <button onClick="move(0,10);">Down</button>
+ </body>
+</html>
+
+ 

@@ -1,0 +1,43 @@
+<html>  
+  <head>
+      	<meta charset="utf-8"/>
+        <title> Javascript et CSS 1</title>
+        <script>
+			function toBlue(){			
+				var elt = document.getElementById("id1");
+				elt.style.color = "#E6E6FF";
+				elt.style.backgroundColor = "#006";
+				elt.style.width = "200px";
+				elt.style.textAlign = "center";
+				elt.style.fontSize = "16px";
+			}
+			function toRed(){			
+				var elt = document.getElementById("id1");
+				elt.style.color = "white";
+				elt.style.backgroundColor = "red";
+				elt.style.width = "100px";
+				elt.style.textAlign = "justify";
+				elt.style.fontSize = "16px";
+			}
+			function noStyle(){			
+				var elt = document.getElementById("id1");
+				elt.style.color = "";
+				elt.style.backgroundColor = "";
+				elt.style.width = "";
+				elt.style.textAlign = "";
+				elt.style.fontSize = "16px";
+			}
+			function zoom(){			
+				var elt = document.getElementById("id1");
+				elt.style.fontSize = "30px";
+			}
+		</script>
+  </head>  
+  <body>  
+  		<div id="id1">Style du texte modifié avec Javascript</div>  <br/>      
+         <button onClick="toBlue();">Bleu</button>&nbsp;&nbsp;
+		 <button onClick="toRed();">Rouge</button>&nbsp;&nbsp;
+		 <button onClick="zoom();">Zoom</button>&nbsp;&nbsp;
+		 <button onClick="noStyle();">Sans style</button>&nbsp;&nbsp;
+  </body>  
+</html>
